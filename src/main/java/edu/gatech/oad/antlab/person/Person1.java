@@ -30,8 +30,15 @@ public class Person1 {
 	 * @return the modified string
 	 */
 	private String calc(String input) {
-	  //Person 1 put your implementation here
-	  return null;
+		char[] toReturn = new char[input.length()];
+		char it;
+	  	for (int i = 0;i < input.length(); i++) {
+	  		it = input.charAt(i);
+	  		int newIndex = (it + 2) % (input.length() - 1);
+	  		toReturn[newIndex] = it;
+	  	}
+	  	String out =  new String(toReturn);
+	  	return out;
 	}
 	
 	/**
@@ -44,6 +51,11 @@ public class Person1 {
 	 */
 	public String toString(String input) {
 	  return name + calc(input);
+	}
+
+	public static void main(String[] args) {
+		Person1 person  = new Person1("Sizhe");
+		System.out.println(person.toString("Samlin"));
 	}
 
 }
