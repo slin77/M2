@@ -5,7 +5,7 @@ import java.util.ArrayList;
 /**
  *  A simple class for person 2
  *  returns their name and a
- *  modified string 
+ *  modified string  
  *
  * @author Bob
  * @version 1.1
