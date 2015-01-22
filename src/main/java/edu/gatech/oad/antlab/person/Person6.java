@@ -29,9 +29,20 @@ public class Person6 {
 	 * @param input the string to be modified
 	 * @return the modified string
 	 */
-	private String calc(String input) {
+	private static String calc(String input) {
 	  //Person 6 put your implementation here
-	  return null;
+		int length = input.length();
+		StringBuilder temp = new StringBuilder(length);
+		for (int i = 0; i<length; i++) {
+			if(i==0) {
+				temp.append(input.charAt(length-1));
+			} else if(i==length-1) {
+				temp.append(input.charAt(0));
+			} else {
+				temp.append(input.charAt(i));
+			}
+		}
+		return temp.toString();
 	}
 	
 	/**
