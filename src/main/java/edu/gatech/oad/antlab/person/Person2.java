@@ -43,7 +43,6 @@ public class Person2 {
             output.append(characters.remove(randPicker));
         }
         return output.toString();
-	  return null;
 	}
 	/**
 	 * Return a string rep of this object
