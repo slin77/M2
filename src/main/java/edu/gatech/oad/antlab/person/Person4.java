@@ -33,8 +33,8 @@ public class Person4 {
       char[] s = input.toCharArray();
       for (int i = 0; i < s.length; i ++)
       {
-         int ans = s[i] + 1;
-         s[i] = (char)ans;
+         int out = s[i] + 1;
+         s[i] = (char)out;
       }
       return new String(s);
     }
