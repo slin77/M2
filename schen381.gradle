@@ -1,14 +1,17 @@
-defaultTasks 'jar'
+defaultTasks 'build'
 apply plugin: 'java'
+
 sourceSets {
-main.java.srcDir "src/main"
+  main.java.srcDir "src/main"
 }
+
 jar {
-manifest.attributes (
-'Main-Class':'edu.gatech.oad.antlab.pkg1.AntLabMain',
-'Class-Path':'../../lib/resources.jar'
-)
+  manifest.attributes (
+    'Main-Class':'edu.gatech.oad.antlab.pkg1.AntLabMain',
+    'Class-Path':'../../lib/resources.jar'
+  )
 }
+
 dependencies {
-compile files('lib/resources.jar')
+  compile files('lib/resources.jar')
 }
