@@ -13,7 +13,7 @@ version = '1.0'
 //Define the contents of the jar file
 jar {
     manifest {
-        attributes 'Implementation-Title': 'M2', 'Implementation-Version': version , 'Main-Class' : "edu.gatech.oad.antlab.pkg1.AntlanMain",
+        attributes 'Implementation-Title': 'M2', 'Implementation-Version': version , 'Main-Class' : "edu.gatech.oad.antlab.pkg1.AntLabMain",
         		   'Class-Path' : "../../lib/resources.jar"
     }
 }
