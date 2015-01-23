@@ -1,5 +1,5 @@
 # M2
-CS2340 M2 project
+CS2340 M2 project 
 
 Version Control and Build Management Lab
 
