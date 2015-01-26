@@ -1,4 +1,4 @@
-defaultTasks 'jar'
+defaultTasks 'build'
 apply plugin: 'java'
 
 sourceSets {
